@@ -5,6 +5,7 @@ import { forcePublic } from '~base/middlewares/'
 import Image from '~base/components/image'
 import PreviewPortfolio from './portfolio/preview-portfolio'
 import PreviewBlog from './blog/components/preview-blog'
+import Brands from './brands'
 
 class Home extends PageComponent {
   constructor(props) {
@@ -96,7 +97,7 @@ class Home extends PageComponent {
           </div>
           <Image src="/public/img/arrow.png" id="arrow" alt="ra cam" />
         </div>
-
+        <Brands />
         <PreviewPortfolio />
         <PreviewBlog />
       </section>
