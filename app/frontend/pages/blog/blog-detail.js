@@ -64,6 +64,7 @@ class Blog extends PageComponent {
     return (
       <div className="container">
         <Helmet>
+          <meta property="og:site_name" content={`RA CAM: ${post.title}`} />
           <meta property="og:title" content={`RA CAM: ${post.title}`} />
         </Helmet>
         <div className="section">
@@ -94,16 +95,10 @@ class Blog extends PageComponent {
           </div>
           <div className="is-flex-end">
             <FacebookShareButton url={window.location.href}>
-              <FacebookIcon
-                size={32}
-                round
-              />
+              <FacebookIcon size={32} round />
             </FacebookShareButton>
             <TwitterShareButton url={window.location.href}>
-              <TwitterIcon
-                size={32}
-                round
-              />
+              <TwitterIcon size={32} round />
             </TwitterShareButton>
           </div>
           <hr />
